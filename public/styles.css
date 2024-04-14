@@ -1,0 +1,209 @@
+/* Structure */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: white;
+  }
+  
+  .craft {
+    margin: 10px;
+  }
+  
+  .craft img {
+    max-width: 90%;
+    display: flex;
+   flex-wrap: wrap;
+  }
+  .craft-text {
+    max-width: 50%;
+    flex: 1;
+  }
+  
+  #craft-details-column {
+    padding: 10px;
+    margin: 10px;
+    background: lightblue;
+    border-radius: 5px;
+  }
+  
+  #add-link {
+    font-size: 0.8em;
+    color: #401e01;
+    border: 2px solid #401e01;
+    padding: 0 4px;
+  }
+  
+  #edit-link {
+    float: right;
+    margin-right: 10px;
+  }
+  
+  #delete-link {
+    float: right;
+  }
+  
+  #add-edit-craft-container {
+    padding: 10px;
+    margin: 10px;
+    background: lightblue;
+    border-radius: 5px;
+  }
+
+  #delete-confirmation button{
+    background-color: blue;
+    border: 3px solid black;
+    width: 200px;
+    height: 40px;
+  }
+  
+  /* Form */
+  .w3-modal-content {
+    max-width: 60%;
+    border: 2px solid #401e01;
+    max-height: 60%;
+  }
+  
+  .flex-container {
+    background: #f2e8dc;
+    position: relative;
+  }
+  
+  
+  label {
+    display: block;
+  }
+  
+  .inline {
+    display: inline;
+  }
+  
+  #supplies-p input {
+    margin-top: 5px;
+  }
+  
+  #add-supplies {
+    color: blue;
+    font-size: 0.75em;
+    text-align: right;
+  }
+
+  #exit-button {
+    display: inline;
+    float: right;
+    margin-right: 10px;
+    margin-top: 5px;
+    cursor: pointer;;
+  }
+
+  .icon {
+    margin-right: 50px;
+    font-size: 30px;
+  }
+
+  .icon-img {
+    margin-right: 5px;
+  }
+  
+  #img-prev-section {
+    width: 100px;
+    border: 1px solid black;
+    max-width: 100px;
+    margin-right: 5px;
+  }
+  #img-prev {
+    padding: 2.5%;
+    display: block;
+    margin: auto;
+    max-width: 95%;
+  }
+
+  .fade-in {
+    animation: fadeIn ease 0.5s;
+  }
+  .fade-out {
+    animation: fadeOut ease 0.5s;
+  }
+  
+  /* Typography */
+  
+  h1 {
+    text-align: left;
+    color: Black;
+  }
+  
+  a {
+    text-decoration: none;
+    color: crimson;
+  }
+  
+  
+  
+  #craft-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .craft-inner {
+    flex: 1;
+    margin-right: 1rem;
+  }
+  
+  .craft-inner img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .description {
+    flex: 2;
+  }
+  .column-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  @media (max-width: 768px) {
+    .column-container {
+        flex: 1;
+    }
+  }
+  
+  @media (max-width: 600px){
+    #craft-details {
+      flex-direction: column;
+    }
+  
+    .craft-inner {
+      margin: 0;
+      margin-bottom: 1rem;
+    }
+    .flex-container {
+      flex-direction: column;
+    }
+  }
+  
+  
+  
+  /* Larger Resolutions */
+  
+  @media (min-width: 600px) {
+    .columns {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .craft-text {
+      flex: 1;
+    }
+    .craft {
+      width: 15%;
+    }
+  
+    #crafts-list {
+      justify-content: center;
+    }
+  }
+
+  .hidden {
+    display: none !important ;
+  }
